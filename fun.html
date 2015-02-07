@@ -1,0 +1,39 @@
+<!--This is what Nathan posted as Jekyll to use a static site to retain headers/footers on different pages of site. Still cannot figure it out, but will!-->
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    {% include head.html %}
+</head>
+
+<body>
+
+{% include main_nav.html %}
+
+div class="container">
+
+<div class="row">
+    <div class="col-md-7 col-md-offset-1">
+        {{ content }}
+    </div>
+
+    <div class="col-md-3 col-md-offset-1">
+        {% include sidebar.html %}
+    </div>
+</div>
+
+<hr>
+
+</div>
+<!-- /.container -->
+
+{% include footer.html class="content" %}
+
+</body>
+
+</html>
+
+
+
+
