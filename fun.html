@@ -1,35 +1,63 @@
-<!--This is what Nathan posted as Jekyll to use a static site to retain headers/footers on different pages of site. Still cannot figure it out, but will!-->
 <!DOCTYPE html>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
-    {% include head.html %}
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/global.css">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic,700italic|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+
 </head>
 
 <body>
-
-{% include main_nav.html %}
-
-div class="container">
-
-<div class="row">
-    <div class="col-md-7 col-md-offset-1">
-        {{ content }}
-    </div>
-
-    <div class="col-md-3 col-md-offset-1">
-        {% include sidebar.html %}
-    </div>
+<div class="media-query">
+    <h1></h1>
 </div>
+<header id="masthead">
+    <nav>
+        <div class="container">
+            <h1 id="brand"><a href="index.html">Rae Macias</a></h1>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/raemacias">About Me</a></li>
+                <li><a href="projects.html">My Projects</a></li>
+                <li><a href="mailto:raemacias@msn.com">Contact</a></li>
 
-<hr>
+            </ul>
+        </div>
+    </nav>
 
-</div>
-<!-- /.container -->
 
-{% include footer.html class="content" %}
+<section id="social">
+    <div class="container">
+        <h3>Let's Be Social!</h3>
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/raemmacias">
+                    <img src="images/facebook.svg" alt="Facebook" />
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/raemacias">
+                    <img src="images/linkedin.svg" alt="LinkedIn" />
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/RaeMacias">
+                    <img src="images/twitter.svg" alt="Twitter" />
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/RaeRae961">
+                    <img src="images/github.svg" alt="GitHub"/>
+                </a>
+            </li>
 
+            <!-- Repeat for all social links you want to include -->
+        </ul>
+    </div>
+</section>
 </body>
 
 </html>
